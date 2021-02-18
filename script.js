@@ -14,14 +14,14 @@ const view = new MapView({
         });
 //STL Parks feature layer (polygons) 
 const parksLayer = new FeatureLayer({
-  url: "https://slustl.maps.arcgis.com/home/webmap/viewer.html?layers=309471f6db3242c8b1315bc5f07ca54a"
+  url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/STL_Parks/FeatureServer"
 });
   
   map.add(parksLayer);
           
 //STL Public Schools (points) 
 const pubschoolLayer = new FeatureLayer({
-  url: "https://slustl.maps.arcgis.com/home/webmap/viewer.html?layers=5458d0ba2a2341b59b5ae3b05d4d922f"
+  url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/Buffer_of_STL_Public_Schools/FeatureServer"
 });
   
   map.add(pubschoolLayer);
