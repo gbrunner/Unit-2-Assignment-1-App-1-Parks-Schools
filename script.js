@@ -8,25 +8,22 @@ const map = new Map({
 
 const view = new MapView({
           map: map,
-          center: [38.675890, -90.377550], // Longitude, latitude
-          zoom: 13, // Zoom level
+          center: [-90.35, 38.65], // Longitude, latitude
+          zoom: 11.5, // Zoom level
           container: "viewDiv" // Div element
         });
 //STL Parks feature layer (polygons) 
-          const parksLayer = new FeatureLayer({
-                    url: "https://slustl.maps.arcgis.com/home/webmap/viewer.html?layers=309471f6db3242c8b1315bc5f07ca54a"
-          });
-map.add(parksLayer);
+const parksLayer = new FeatureLayer({
+  url: "https://slustl.maps.arcgis.com/home/webmap/viewer.html?layers=309471f6db3242c8b1315bc5f07ca54a"
+});
+  
+  map.add(parksLayer);
           
-//STL Public Schools (points)
-          const pubschoolLayer = new FeatureLayer({
-                    url: "https://slustl.maps.arcgis.com/home/webmap/viewer.html?layers=5458d0ba2a2341b59b5ae3b05d4d922f"
-          });
-map.add(pubschoolLayer, 0);
-          
-          var webmap = new WebMap({
-        portalItem: { // autocasts as new PortalItem()
-          id: "d2e5c37512054e62a15464955dc65d95"
-        }
-      });
+//STL Public Schools (points) 
+const pubschoolLayer = new FeatureLayer({
+  url: "https://slustl.maps.arcgis.com/home/webmap/viewer.html?layers=5458d0ba2a2341b59b5ae3b05d4d922f"
+});
+  
+  map.add(pubschoolLayer);
+  
  });
