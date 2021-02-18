@@ -13,7 +13,7 @@ const view = new MapView({
           container: "viewDiv" // Div element
         });
 //STL Parks feature layer (polygons) 
-          const = parksLayer = new FeatureLayer({
+          const parksLayer = new FeatureLayer({
                     url: "https://slustl.maps.arcgis.com/home/webmap/viewer.html?layers=309471f6db3242c8b1315bc5f07ca54a"
           });
 map.add(parksLayer);
