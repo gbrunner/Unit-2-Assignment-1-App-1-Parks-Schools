@@ -1,2 +1,2 @@
-# GIS-Unit-2-Starter-App-Excerise-
- https://snsaid1998.github.io/GIS-Unit-2-Starter-App-Excerise-/
+# GIS-Unit-2-Assignment-App-1
+ https://snsaid1998.github.io/Unit-2-Assignment-App-1-/
