@@ -27,3 +27,9 @@ const pubschoolLayer = new FeatureLayer({
   map.add(pubschoolLayer);
   
  });
+
+  var webmap = new WebMap({
+        portalItem: { // autocasts as new PortalItem()
+          id: "13ba212005704b72a72ab1c75903393c"
+        }
+      });
