@@ -14,7 +14,7 @@ var view = new MapView({
         });
 //STL Parks feature layer (polygons) 
 var parksLayer = new FeatureLayer({
-  url: "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/STL_Parks/FeatureServer"
+  url: "https://services9.arcgis.com/l9yXFvhjz46ekkZV/arcgis/rest/services/St_Louis_City_Parks/FeatureServer"
 });
   
   map.add(parksLayer);
